@@ -1,0 +1,66 @@
+.first-screen
+    padding: 40px 0 60px
+    background: url('../img/main_bg.jpg') center/cover no-repeat
+    min-height: 500px
+    text-align: center
+    &__logo
+        &-text
+            font-weight: 500
+            font-size: 15px
+            text-transform: uppercase
+            color: #FFFFFF 
+            margin-top: 8px
+    &__title
+        font-weight: 900        
+        font-size: 41px
+        text-transform: uppercase
+        color: $second-color
+        margin-top: 56px 
+    &__big-title
+        font-weight: 900
+        font-size: 80px
+        text-transform: uppercase
+        color: #FFF
+        margin-top: 0
+        position: relative
+        &::before, &::after
+            content: ""
+            display: block
+            width: 292px
+            height: 2px
+            background-color: #fff
+            position: absolute
+            top: 50%
+        &::after
+            right: 0        
+    &__subtitle
+        font-weight: 900
+        font-size: 41px
+        text-transform: uppercase
+        color: $second-color
+        margin-top: 20px
+    &__text
+        font-weight: 300
+        font-size: 21px
+        line-height: 1.33
+        color: #FFFFFF
+        text-align: left
+        margin-top: 22px
+        span
+            color: $second-color
+            font-weight: 700
+    &__more
+        margin-top: 70px
+        text-align: center
+        &-text
+            font-weight: 100
+            font-size: 15px
+            text-transform: uppercase
+            color: #FFFFFF
+            text-decoration: none
+        &-icon
+            display: block
+            margin: 0 auto
+            margin-top: 8px
+        
+
