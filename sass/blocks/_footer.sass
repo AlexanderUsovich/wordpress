@@ -1,15 +1,39 @@
 .footer
-    padding: 55px 0 70px
-    background: #1A1A1A
-    text-align: center
-    font-weight: 300
-    font-size: 15px
-    line-height: 21px
-    color: #888888
-    a
-        font-weight: 300
-        font-size: 15px
-        line-height: 21px
-        color: #888888
-    &__call-link
-        text-decoration: none
+	padding: 55px 0 70px
+	background: #1A1A1A
+	text-align: center
+	font-weight: 300
+	font-size: 15px
+	line-height: 21px
+	color: #888888
+	&__link
+		font-weight: 300
+		font-size: 15px
+		line-height: 21px
+		color: #888888
+		@include link-hover
+	&__call-link
+		text-decoration: none
+		color: #888
+		@include link-hover
+	&__social
+		display: flex
+		justify-content: center
+		margin-top: 15px
+		&-link
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			border: 2px solid #888
+			margin: 0 10px
+			cursor: pointer 
+			display: flex
+			align-items: center
+			justify-content: center
+			text-decoration: none
+			@include link-hover
+			img
+				height: 18px
+			
+				
+			
