@@ -3,12 +3,17 @@
 
 *
 	font-family: 'Roboto', sans-serif
+	user-select: none
+	box-sizing: border-box
 	// font-family: 'Roboto Condensed', sans-serif
 html 
 	scroll-behavior: smooth
 
 h1, h2, h3, p
 	margin: 0
+
+.animate__animated
+	opacity: 1 !important
 
 .container
 	width: 1150px
@@ -41,4 +46,5 @@ h1, h2, h3, p
 @import "blocks/gift"
 @import "blocks/webinar"
 @import "blocks/footer"
+@import "blocks/modal"
 @import "base/media"
