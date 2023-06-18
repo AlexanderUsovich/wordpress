@@ -7,6 +7,13 @@ window.onload = function() {
 };
 
 $(document).ready(function () {
+	$('[data-modal=modal]').on('click', function() {
+		$('.overlay, #modal').fadeIn("slow");
+	});
+
+	$('.modal__close').on('click', function() {
+		$('.overlay, #modal, #thanks').fadeOut('slow');
+	});
 	$('form').submit(function(e) {
 		e.preventDefault();
 		if (!$(this).valid()){
@@ -116,14 +123,6 @@ $(document).ready(function () {
 			if (imagePos < topOfWindow+650) {
 					$(this).addClass("animate__animated animate__slideInRight");
 			}
-		});
-
-		$('[data-modal=modal]').on('click', function() {
-			$('.overlay, #modal').fadeIn("slow");
-		});
-
-		$('.modal__close').on('click', function() {
-			$('.overlay, #modal, #thanks').fadeOut('slow');
 		});
 	});
 });
